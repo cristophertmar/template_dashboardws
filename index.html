@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Op</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="cuadro-contenedor">
+
+        <div class="cuadro-subcontenedor">
+
+            <div class="cabecera"></div>
+
+            <div class="cuadro-contenido">
+                <div class="seccion-izquierda">
+
+                </div>
+                <div class="seccion-derecha">
+
+                    <div class="cuadro-reporte">
+
+                        <div class="colum-tiempo">
+                            <div class="seccion-anio">
+
+                                <div class="contenedor-anio-mes">
+                                    <div class="selector">
+                                        <div class="titulo-selector">
+                                            AÑO
+                                        </div>
+                                        <div class="filtro-selector">
+                                            <i class="fas fa-list-ul"></i>
+                                            <i class="fas fa-filter"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cuerpo-anio">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="seccion-mes">
+
+                                <div class="contenedor-anio-mes">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="colum-reporte">
+
+                            <div class="contenedor-grafico" id="desempeno_operadores"></div>
+                            <div class="contenedor-grafico">
+
+                                <div class="grafico-pie" id="USDTipo_operacion"></div>
+                                <div class="grafico-pie" id="USDTipo_cliente"></div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="colum-reporte">
+
+                            <div class="contenedor-grafico" id="evolucion_ticket"></div>
+                            <div class="contenedor-grafico">
+                                <div class="grafico-pie" id="USDScore_riesgo"></div>
+                                <div class="grafico-pie" id="USDCondicion_cliente"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="cuadro-datos">
+
+                        <div class="contenedor-crecimiento">
+
+                            <div class="crecimiento-cabecera">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>TASA DE CRECIMIENTO</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="crecimiento-cuerpo">
+                                <div class="texto-cuerpo">
+                                    PROMEDIO MÓVIL ÚLTIMOS 6
+                                </div>
+                                <div class="porcentaje-cuerpo">
+                                    10%
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="contenedor-igeneral">
+
+                            <div class="contenedor-tigeneral">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>APELLIDOS Y NOMBRES / RAZON SOCIAL</td>
+                                            <td>ULTIMA OPERACIÓN</td>
+                                            <td>IMPORTE TRANSADO</td>
+                                            <td>SEG</td>
+                                            <td>SCORE</td>
+                                            <td>RIESGO</td>
+                                            <td>CONDICIÓN</td>
+                                            <td>IND. DESVIAC</td>
+                                            <td>REGIMEN</td>
+                                            <td>CONTROL DDC</td>
+                                            <td>ALERTA</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>TUCAMBISTA S.A.C.</td>
+                                            <td>13/11/2020</td>
+                                            <td>USD &nbsp;&nbsp;&nbsp; 51.480,00</td>
+                                            <td>2</td>
+                                            <td>2,27</td>
+                                            <td>Medio</td>
+                                            <td>Habitual</td>
+                                            <td>Aceptable</td>
+                                            <td>General</td>
+                                            <td>Conforme</td>
+                                            <td>Aceptable</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="assets/fontawesome/js/all.min.js"></script>
+    <!--  <script src="https://code.highcharts.com/highcharts.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <!-- <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
+    <script src="assets/js/charts.js"></script>
+</body>
+
+</html>
